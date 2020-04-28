@@ -18,8 +18,8 @@ public class Screen {
 	private Integer screenId;
 	
 	@ManyToOne(optional = false)
-    @JoinColumn(name="THEATRE_ID")
-	private Theatre theatre;
+        @JoinColumn(name="THEATRE_ID")
+	private List<Theatre> theatres;
 	
 	private String screenName;
 	private Integer rows;
